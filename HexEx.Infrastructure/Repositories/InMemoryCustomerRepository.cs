@@ -21,11 +21,18 @@ namespace HexEx.Infrastucture.Repositories
 
         public Task<Customer> Save(Customer customer, CancellationToken cancellationToken)
         {
-            data.RemoveAll(c => c.Id == customer.Id);
-
             var dbCustomer = DbCustomer.MapIn(customer);
             dbCustomer.UpdateDate = DateTime.Now;
-            
+
+            if (dbCustomer.Id == Guid.Empty)
+            {
+                dbCustomer.Id = Guid.NewGuid();
+            }
+            else
+            {
+                data.RemoveAll(c => c.Id == customer.Id);
+            }
+
             data.Add(dbCustomer);
 
             return Task.FromResult(dbCustomer.MapOut());

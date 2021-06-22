@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexEx.Application", "HexEx.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexEx.Application.IO", "HexEx.Application.IO\HexEx.Application.IO.csproj", "{D3381635-383F-4E62-B66C-4963E5582D36}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{0E9B03C7-AC12-4538-822A-61DC780AADF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexEx.WebAPI", "Implementation\HexEx.WebAPI\HexEx.WebAPI.csproj", "{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +76,20 @@ Global
 		{D3381635-383F-4E62-B66C-4963E5582D36}.Release|x64.Build.0 = Release|Any CPU
 		{D3381635-383F-4E62-B66C-4963E5582D36}.Release|x86.ActiveCfg = Release|Any CPU
 		{D3381635-383F-4E62-B66C-4963E5582D36}.Release|x86.Build.0 = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|x64.Build.0 = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Debug|x86.Build.0 = Debug|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|x64.ActiveCfg = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|x64.Build.0 = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|x86.ActiveCfg = Release|Any CPU
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91E1FE78-C577-4BC5-9AF6-D9AE886DBF06} = {0E9B03C7-AC12-4538-822A-61DC780AADF5}
 	EndGlobalSection
 EndGlobal
